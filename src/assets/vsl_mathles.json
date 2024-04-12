@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "src": "/src/assets/vsl_mathles_1.png",
+        "legend": "Mathles est un jeu web basé sur le calcul mental. Le but est de répondre le plus rapidement possible à une série de questions. En mode SOLO, le but est d'atteindre le sommet des différents classements."
+    },
+    {
+        "id": 2,
+        "src": "/src/assets/vsl_mathles_2.png",
+        "legend": "Mathles est un jeu web basé sur le calcul mental. Le but est de répondre le plus rapidement possible à une série de questions. En mode SOLO, le but est d'atteindre le sommet des différents classements."
+    }
+]
