@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "src": "/src/assets/vsl_oc2/vsl_oc2_1.png",
+        "legend": ["Sélection d'hébergements pour vos futures vacances"]
+    },
+    {
+        "id": 2,
+        "src": "/src/assets//vsl_oc2/vsl_oc2_2.png",
+        "legend": ["HTML & CSS"]
+    }
+]

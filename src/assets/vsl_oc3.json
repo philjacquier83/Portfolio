@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "src": "/src/assets/vsl_oc3/vsl_oc3_1.png",
+        "legend": ["Un p'tit creux ?",
+                    "Présentation de restaurants et de leurs cartes"]
+    },
+    {
+        "id": 2,
+        "src": "/src/assets/vsl_oc3/vsl_oc3_2.png",
+        "legend": ["HTML & Sass"]
+    },
+    {
+        "id": 3,
+        "src": "/src/assets/vsl_oc3/vsl_oc3_3.png",
+        "legend": ["Flexbox & animations"]
+    }
+]

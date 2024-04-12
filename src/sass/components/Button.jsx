@@ -2,10 +2,23 @@ import { faAngleLeft, faAngleRight, faXmark } from '@fortawesome/free-solid-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-import Visuals from '../../assets/vsl_mathles.json'
+import vsl_mathles from '../../assets/vsl_mathles.json'
+import vsl_lousdiner from '../../assets/vsl_lousdiner.json'
+import vsl_tictactoe from '../../assets/vsl_tictactoe.json'
+import vsl_oc7 from '../../assets/vsl_oc7.json'
+import vsl_oc5 from '../../assets/vsl_oc5.json'
+import vsl_oc3 from '../../assets/vsl_oc3.json'
+import vsl_oc2 from '../../assets/vsl_oc2.json'
 
-function Button({ text }) {
+function Button({ text, category }) {
     
+    const visuals = category == 1 ? vsl_mathles : 
+                    category == 2 ? vsl_lousdiner :
+                    category == 3 ? vsl_tictactoe :
+                    category == 4 ? vsl_oc7 :
+                    category == 5 ? vsl_oc5 :
+                    category == 6 ? vsl_oc3 : vsl_oc2
+console.log(category);
     const [ isModal, setIsModal ] = useState('')
     const handleOpenModal = (newModal) => {
         setIsModal(newModal)
@@ -18,13 +31,13 @@ function Button({ text }) {
     const [ currentImg, setCurrentImg ] = useState(0)
     const handlePreviousImg = () => {
         if(currentImg == 0) {
-            setCurrentImg(Visuals.length - 1)
+            setCurrentImg(visuals.length - 1)
         } else {
             setCurrentImg(prev => prev - 1)
         }
     }
     const handleNextImg = () => {
-        if(currentImg == Visuals.length - 1) {
+        if(currentImg == visuals.length - 1) {
             setCurrentImg(0)
         } else {
             setCurrentImg(prev => prev  + 1)
@@ -42,10 +55,14 @@ console.log(isModal);
                     <div className='textModal'>
                         <div className="visual">
                             <FontAwesomeIcon icon={faAngleLeft} className='arrowNav' onClick={handlePreviousImg} /> 
-                            <img src={Visuals[currentImg].src} />
+                            <img src={visuals[currentImg].src} />
                             <FontAwesomeIcon icon={faAngleRight} className='arrowNav' onClick={handleNextImg} />                             
                         </div>
-                        <div className="legend">{Visuals[currentImg].legend} ({currentImg + 1} / {Visuals.length})</div>
+                        
+                        <div className="legend">
+                            {visuals[currentImg].legend.map((legendItem, item) =>
+                            <div key={`LegendItem-${item}`}>{legendItem}</div>
+                        )} ({currentImg + 1} / {visuals.length})</div>
                     </div>
                 </div>
             </div>
@@ -55,7 +72,8 @@ console.log(isModal);
 }
 
 Button.propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    category: PropTypes.number.isRequired
 }
 
 export default Button

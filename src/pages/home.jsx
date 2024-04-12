@@ -61,7 +61,7 @@ function Home() {
                                     onClick={(event) => {event.preventDefault();
                                                 window.open(project.website, '_blank');}}>Website</Link>
                                 }
-                                <Button text="Screenshots" />
+                                <Button text="Screenshots" category={Number(project.id)} />
                                 <Button text="Code on GitHub" />
                                 {project.figmaMockup.length > 0 && <Button text="Figma Mockup" />}
                             </div>
