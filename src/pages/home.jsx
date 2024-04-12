@@ -2,10 +2,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../sass/global/_base.scss'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import Button from '../sass/components/Button'
-import Mathles1 from '../assets/vsl_mathles_1.png'
+import projects from '../assets/projects.json'
+import { Link } from 'react-router-dom'
 
 function Home() {
     
+    const listProjects = projects
+
     return (
 
         <>
@@ -38,24 +41,36 @@ function Home() {
                 <div className="section__category">
                     <div className="bubble">Personal projects</div>
                 </div>
-                <div className="section__infos section__projects">
-                    <div className="project">
-                        <div className="project__Name">Mathles</div>
-                        <div className="project__Desc">
-                            Mathles is a web game. Be fast to answer a series of questions about additions, subtractions, multiplications or divisions.<br />
-                            Play solo to reach the Stage 250 or try the Battles’ mode where you can play against another player.<br />
-                            Other game’s modes : Training, Schools.
+
+                <div className="section__listProjects">
+                {listProjects.map((project, index) => 
+                    <div className="section__infos section__projects" key={`Project-${index}`}>
+                        <div className="project">
+                            <div className="project__Name">{project.name}</div>
+                            <div className="project__Desc">
+                                {project.description.map((desc, id) =>
+                                    <div key={`Desc-Project-${id}`}>{desc}</div>
+                                )}
+                            </div>
+                            <div className="listButtons">
+                                {project.website === 'restricted' ?
+                                <Button text="Website" />
+                                :
+                                <Link className="btn" 
+                                    to={project.website} 
+                                    onClick={(event) => {event.preventDefault();
+                                                window.open(project.website, '_blank');}}>Website</Link>
+                                }
+                                <Button text="Screenshots" />
+                                <Button text="Code on GitHub" />
+                                {project.figmaMockup.length > 0 && <Button text="Figma Mockup" />}
+                            </div>
                         </div>
-                        <div className="listButtons">
-                            <Button text="Website" />
-                            <Button text="Screenshots" />
-                            <Button text="Code on GitHub" />
-                            <Button text="Figma Mockup" />
+                        <div className="project__Visual">
+                            <img src={project.visual} />
                         </div>
                     </div>
-                    <div className="project__Visual">
-                        <img src={Mathles1} />
-                    </div>
+                )}
                 </div>
             </div>
         </>

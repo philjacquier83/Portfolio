@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Mathles",
+        "description": [
+            "Mathles is a web game. Be fast to answer a series of questions about additions, subtractions, multiplications or divisions.",
+            "Play solo to reach the Stage 250 or try the Battles’ mode where you can play against another player.",
+            "Other game’s modes : Training, Schools."
+        ],
+        "visual": "/src/assets/vsl_mathles/vsl_mathles_1.png",
+        "website": "restricted",
+        "screenshots": [],
+        "github": "restricted",
+        "figmaMockup": []
+    },
+    {
+        "id": 2,
+        "name": "Lou's Diner",
+        "description": [
+            "Welcome to this vintage style Diner !"
+        ],
+        "visual": "/src/assets/vsl_lousdiner/vsl_lousdiner_1.png",
+        "website": "restricted",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/Lou-sDinner",
+        "figmaMockup": []
+    },
+    {
+        "id": 3,
+        "name": "TicTacToe",
+        "description": [
+            "Align your Avatar three times to beat the Computer."
+        ],
+        "visual": "/src/assets/vsl_tictactoe/vsl_tictactoe_3.png",
+        "website": "restricted",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/TicTacToe",
+        "figmaMockup": []
+    },
+    {
+        "id": 4,
+        "name": "KASA",
+        "description": [
+            "Projet 7 - OpenClassrooms - Site d'annonces de location d'appartements."
+        ],
+        "visual": "/src/assets/vsl_oc7/vsl_oc7_1.png",
+        "website": "restricted",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/OC_P7",
+        "figmaMockup": []
+    },
+    {
+        "id": 5,
+        "name": "KANAP",
+        "description": [
+            "Projet 5 - OpenClassrooms - Vous recherchez votre prochain canapé ? Visitez KANAP."
+        ],
+        "visual": "/src/assets/vsl_oc5/vsl_oc5_1.png",
+        "website": "restricted",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/OC_P5",
+        "figmaMockup": []
+    },
+    {
+        "id": 6,
+        "name": "Oh my Food !",
+        "description": [
+            "Projet 3 - OpenClassrooms",
+            "Pas d'idées repas pour ce soir ? Commandez sur Oh my Food !"
+        ],
+        "visual": "/src/assets/vsl_oc3/vsl_oc3_1.png",
+        "website": "https://philjacquier83.github.io/OC_P3/",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/OC_P3",
+        "figmaMockup": []
+    },
+    {
+        "id": 7,
+        "name": "Booki",
+        "description": [
+            "Projet 2 - OpenClassrooms",
+            "Trouvez votre hébergement pour des vacances de rêve."
+        ],
+        "visual": "/src/assets/vsl_oc2/vsl_oc2_1.png",
+        "website": "https://philjacquier83.github.io/OC_P2/",
+        "screenshots": [],
+        "github": "https://github.com/philjacquier83/OC_P2",
+        "figmaMockup": []
+    }
+]
