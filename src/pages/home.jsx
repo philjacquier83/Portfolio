@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../sass/global/_base.scss'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
-import Button from '../sass/components/Button'
+import Button from '../components/Button'
 import projects from '../assets/projects.json'
 import { Link } from 'react-router-dom'
 

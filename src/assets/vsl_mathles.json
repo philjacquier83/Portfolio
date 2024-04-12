@@ -10,5 +10,44 @@
         "src": "/src/assets/vsl_mathles/vsl_mathles_2.png",
         "legend": ["En mode SOLO, le but est d'atteindre le sommet des différents classements.",
                     "En mode BATTLES, mesure-toi aux autres joueurs en étant le plus rapide !"]
+    },
+    {
+        "id": 3,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_3.png",
+        "legend": ["Trois modes de BATTLES : Classic, Championnat, SuperChampionnat.",
+                    "Ci-dessus : les Playoffs du SuperChampionnat."]
+    },
+    {
+        "id": 4,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_4.png",
+        "legend": ["Compare-toi aux joueurs que tu affrontes !"]
+    },
+    {
+        "id": 5,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_schools_1.png",
+        "legend": ["Mode ECOLES : réservé aux écoles.",
+                    "Inscris ton école, ta classes, tes élèves et fais-les travailler de façon ludique."]
+    },
+    {
+        "id": 6,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_schools_2.png",
+        "legend": ["Suis les résultats de chacun de tes élèves."]
+    },
+    {
+        "id": 7,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_schools_3.png",
+        "legend": ["Accède aux résultats distincts de chacun de tes élèves."]
+    },
+    {
+        "id": 8,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_schools_4.png",
+        "legend": ["Crée des exercices sur mesure pour tes élèves.",
+                    "Travailler les multiplications ? Crée un exercice centré sur les tables."]
+    },
+    {
+        "id": 9,
+        "src": "/src/assets/vsl_mathles/vsl_mathles_schools_5.png",
+        "legend": ["Suis les statistiques de ton école.",
+                    "Comment se classe-t-elle par rapport aux autres écoles du pays ? Du monde entier ?"]
     }
 ]
