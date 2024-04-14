@@ -62,7 +62,13 @@ function Home() {
                                                 window.open(project.website, '_blank');}}>Website</Link>
                                 }
                                 <Button text="Screenshots" category={Number(project.id)} />
+                                {project.github === 'restricted' ?
                                 <Button text="Code on GitHub" />
+                                :
+                                <Link className="btn" 
+                                    to={project.github} 
+                                    onClick={(event) => {event.preventDefault();
+                                                window.open(project.github, '_blank');}}>Code On GitHub</Link>}
                                 {project.figmaMockup.length > 0 && <Button text="Figma Mockup" />}
                             </div>
                         </div>

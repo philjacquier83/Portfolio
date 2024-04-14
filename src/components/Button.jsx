@@ -18,7 +18,7 @@ function Button({ text, category }) {
                     category == 4 ? vsl_oc7 :
                     category == 5 ? vsl_oc5 :
                     category == 6 ? vsl_oc3 : vsl_oc2
-console.log(category);
+
     const [ isModal, setIsModal ] = useState('')
     const handleOpenModal = (newModal) => {
         setIsModal(newModal)
@@ -31,7 +31,8 @@ console.log(category);
     const [ currentImg, setCurrentImg ] = useState(0)
     const handlePreviousImg = () => {
         if(currentImg == 0) {
-            setCurrentImg(visuals.length - 1)
+            setCurrentImg(visuals.length - 1);
+            
         } else {
             setCurrentImg(prev => prev - 1)
         }
@@ -40,7 +41,7 @@ console.log(category);
         if(currentImg == visuals.length - 1) {
             setCurrentImg(0)
         } else {
-            setCurrentImg(prev => prev  + 1)
+            setCurrentImg(prev => prev  + 1);
         }
     }
 
